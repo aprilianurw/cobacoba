@@ -1,0 +1,25 @@
+/* pink color style */
+.btn-1:hover,
+.people-section .people-item-inner .social-links a i,
+.story-section .story-text h3,
+.couple-section .social-links a i,
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: rgba(176, 117, 36, 0.8);
+
+}
+.btn-1,
+.people-section .people-item-inner .social-links a i,
+.couple-section .social-links a i,
+.couple-section .couple img{
+    border-color: rgba(176, 117, 36, 0.8);
+}
+.btn-1,
+.people-section .people-item-inner .social-links a:hover i,
+.people-section  .filter-btn.active,
+.couple-section .social-links a:hover i{
+    background-color: rgba(176, 117, 36, 0.8);
+}
+.couple-section .couple h3{
+    color: rgba(176, 117, 36, 0.8);
+}
