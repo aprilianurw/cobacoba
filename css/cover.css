@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /*default style*/
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     line-height: 1.5;
     font-size: 16px;
     font-weight: 400;
-    background-color: #e2e1ac;
+    background-color: #fee5b1;
 }
 *:not(i){
     font-family: 'Roboto', sans-serif;
@@ -73,7 +76,7 @@ header,section,footer{
 
 }
 .header .logo{
-    padding: 0 15px;
+    padding: 0 5px;
 }
 .header .logo a{
     font-size: 30px;
@@ -82,6 +85,7 @@ header,section,footer{
     font-family: 'Great Vibes', cursive;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: left;
 }
 .header .nav{
     padding: 0 15px;
@@ -103,6 +107,43 @@ header,section,footer{
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.5s ease;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+li a, .dropbtn{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f7d489;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.1);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a{
+    color: #000000;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #f7d489;
+    border-radius: 20px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 /*home section*/
@@ -138,14 +179,14 @@ header,section,footer{
     font-size: 24px;
     color: rgba(176, 117, 36, 0.8);
     margin: 0 0 15px;
-    text-align: right;
+    text-align: left;
 }
 .home-section .home-content p{
     font-size: 20px;
     color: #000000;
     margin: 0;
     font-weight: normal;
-    text-align: right;
+    text-align: left;
     color: rgba(176, 117, 36, 0.8);
 }
 .home-section .home-content span{
@@ -315,6 +356,24 @@ header,section,footer{
     text-transform: capitalize;
 }
 .story-section .story-text p{
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
+    color: #555555;
+}
+.story-section .story-text dd{
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
+    color: #555555;
+}
+.story-section .story-text dt{
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
+    color: #555555;
+}
+.story-section .story-text dl{
     font-size: 15px;
     line-height: 26px;
     margin: 0;
@@ -566,7 +625,7 @@ header,section,footer{
     justify-content: center;
 }
 .gallery-section .gallery-item-vidio{
-    width: 200%
+    width: 200%;
 }
 
 /*gallery popup*/
@@ -660,12 +719,12 @@ header,section,footer{
 /* rsvp section */
 .rsvp-section{
     padding: 80px 0 80px;
-    background-color: rgba(176, 117, 36, 0.8);
+    background-color:  #f7d489;
     
 }
 .rsvp-section .section-title h2,
 .rsvp-section .section-title p{
-    color: #e2e1ac;
+    color: rgba(176, 117, 36, 0.8);
 }
 .rsvp-section .section-title p{
     margin: 10px 0 0;
